@@ -9,4 +9,4 @@ cfssl gencert --config=ca-config.json -ca=cert/ca.pem -ca-key=cert/ca-key.pem -p
 cfssl gencert --config=ca-config.json -ca=cert/ca.pem -ca-key=cert/ca-key.pem -profile=etcd peer-csr.json |cfssljson -bare cert/peer
 cfssl gencert --config=ca-config.json -ca=cert/ca.pem -ca-key=cert/ca-key.pem -profile=etcd server-csr.json |cfssljson -bare cert/server
 cd cert/;ls |grep -v .pem|xargs rm;cd ..
-rm cert/.gitkeep
+sh ./rename.sh
