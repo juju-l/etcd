@@ -1,11 +1,11 @@
 {
   "CN": "peer",
   "_": "cfssl gencert --config=ca-config.json -ca=ca.pem -ca-key=ca-key.pem -profile=etcd peer-csr.json |cfssljson -bare peer",
-  "hosts": {
+  "hosts": [
     "10.0.7.251",
     "10.0.7.252",
     "10.0.7.253"
-  },
+  ],
   "key": {
     "algo": "rsa",
     "size": 2048
