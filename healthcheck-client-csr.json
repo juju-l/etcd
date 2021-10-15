@@ -5,7 +5,7 @@
     "algo": "rsa",
     "size": 2048
   },
-  "names": {
+  "names": [{
     "O": "system:masters"
-  }
+  }]
 }
